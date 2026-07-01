@@ -1,0 +1,5 @@
+# agenix secrets
+*.age
+
+# project files
+/deploy-files/srv/momentocero/*
