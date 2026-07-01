@@ -22,12 +22,12 @@ Finally paste the project files in `./deploy-files/srv/momentocero/...` *and the
 
 To deploy the project to any server run the following command, it even deploys from any linux distro! (following that you have SSH root access):
 
-```nix
+```bash
 nix run github:nix-community/nixos-anywhere -- --generate-hardware-config nixos-generate-config ./hardware-configuration.nix --flake .#momentocero --target-host root@<SERVER-IP> --extra-files ./deploy-files
 ```
 
 If you need to change some config after deployed you can run the following:
 
-```nix
+```bash
 nixos-rebuild boot --flake .#momentocero --target-host "root@<SERVER-IP>"
 ````
